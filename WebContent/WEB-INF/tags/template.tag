@@ -35,7 +35,8 @@
 					<li><a href="#">Unit: <span id="un"></span></a></li>
 					<li><a href="#">Language: <span id="lan"></span></a></li>
 					<li><a href="#">Div Id: <span id="div"></span></a></li>
-				
+					<li><a href="#">Prefix: <span id="pre"></span></a></li>
+					<li><a href="#">Suffix: <span id="suf"></span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -58,6 +59,8 @@
 			$("#un").html(sessionStorage.unit);
 			$("#lan").html(sessionStorage.language);
 			$("#div").html(sessionStorage.div);
+			$("#pre").html(sessionStorage.pre);
+			$("#suf").html(sessionStorage.suf);
 		} catch (e) {
 			alert(e);
 		}
@@ -67,7 +70,8 @@
 			$('input[name=Lang]').val(sessionStorage.language);
 			$('input[name=Div]').val(sessionStorage.div);
 			$('.lpdiv').prop('id', sessionStorage.div);
-			
+			$('input[name=Pre]').val(sessionStorage.pre);
+			$('input[name=Suf]').val(sessionStorage.suf);
 		}
 		
 		catch (e) {

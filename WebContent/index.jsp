@@ -19,6 +19,8 @@
 				var unit = $('#Unit').val();
 				var language = $('#Lang').val();
 				var div = $('#Div').val();
+				var pre = $('#Pre').val();
+				var suf = $('#Suf').val();
 				//alert(unit+language+div);
 				if (sessionStorage.siteId) {
 				    sessionStorage.siteId = sid;
@@ -40,6 +42,16 @@
 					sessionStorage.div = div;
 				} else {
 					sessionStorage.div = div;
+				}
+				if (sessionStorage.pre) {
+					sessionStorage.pre = pre;
+				} else {
+					sessionStorage.pre = pre;
+				}
+				if (sessionStorage.suf) {
+					sessionStorage.suf = suf;
+				} else {
+					sessionStorage.suf = suf;
 				}
 				
 				location.reload();
@@ -64,8 +76,16 @@
 	 	</tr>
 	 	<tr>
 	 	<td><br><b>Div Id: </b></td>
-	 	<td><input type="text" value="" id="Div" name="Div"><td>	 	
+	 	<td><input type="text" value="" id="Div" name="Div"></td>	 	
+  		</tr>
   		<tr>
+  		<td><br><b>Prefix:</b></td>
+  		<td><input type="text" value="" id="Pre" name="Pre"></td>
+  		</tr>
+  		<tr>
+  		<td><br><b>Suffix:</b></td>
+  		<td><input type="text" value="" id="Suf" name="Suf"></td>
+  		</tr>
   		<tr>
   		<td>
   		</td>

@@ -117,5 +117,5 @@ if (window.attachEvent) {
 	window.addEventListener('load',lpMTagConfig.onLoadAll,false);
 }
 
-lpMTagConfig.dynButton[lpMTagConfig.dynButton.length] = {'name':'chat-'+lpUnit+'-'+lpLanguage,'pid':'lpchat','afterStartPage': true};
+lpMTagConfig.dynButton[lpMTagConfig.dynButton.length] = {'name':'chat-'+sessionStorage.pre+lpUnit+'-'+lpLanguage+sessionStorage.suf,'pid': sessionStorage.div,'afterStartPage': true};
 /* LP Button Code */
